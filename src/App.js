@@ -1,5 +1,7 @@
   import { useEffect, useState } from 'react';
 import './App.css';
+import Countries from './Components/Countries';
+
 
  
 
@@ -7,16 +9,19 @@ import './App.css';
 
   function Counter() {
     const [count , setCount]= useState(0)
+
+
    const increment = ()=>{ setCount(count + 1)
-  
    }
    const decrement = ()=>{ setCount(count - 1)}
+
+
     return (
      
       <div>
-<p>count:{count} </p>
-<button onClick={increment}>increment</button>
-<button onClick={decrement}>decrement</button>
+                <p>count:{count} </p>
+                <button onClick={increment}>increment</button>
+                <button onClick={decrement}>decrement</button>
    
       </div>
     )
@@ -59,6 +64,7 @@ function App() {
       <header  className="App-header">
         <Counter></Counter>
         <ExternalUsers></ExternalUsers>
+        <Countries></Countries>
       
        
 
